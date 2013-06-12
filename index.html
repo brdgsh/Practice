@@ -1,9 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>jQuery Mobile Web App</title>
-<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/><style type="text/css">
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<style type="text/css">
 th {
     font-size: 16px;
 }
@@ -33,402 +34,418 @@ body {
 </style>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-</head> 
-<body> 
-
+<script type="text/javascript">
+<!--
+function goBack()
+  {
+  window.history.back()
+  }
+//-->
+</script>
+</head>
+<body>
 <div data-role="page" id="page">
-	<div data-role="header" data-theme="b">
-		<h1>ISD Phone List</h1>
-	</div>
-	<div data-role="content">	
-		<ul data-role="listview" data-theme="d">
-			<li><a href="#page2">ISD Staff</a> </li>
-            <li><a href="#page3">On Call / Other</a></li>
-			<li><a href="#page4">Vendors</a></li>
-		</ul>		
-	</div>
-    <img  style="position: relative; height: auto; width: 100%;" src="icons/gsh_front.png" width="445" height="194" alt="Good Samaritan Hospital" />
-<div data-role="footer" data-theme="b">
-    <h4><marquee scrollamount="">Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence</marquee></h4>
+  <div data-role="header" data-theme="b">
+    <h1>ISD Phone List</h1>
+  </div>
+  <div data-role="content">
+    <ul data-role="listview" data-theme="d">
+      <li><a href="#page2">ISD Staff</a> </li>
+      <li><a href="#page3">On Call / Other</a></li>
+      <li><a href="#page4">Vendors</a></li>
+    </ul>
+  </div>
+  <img  style="position: relative; height: auto; width: 100%;" src="icons/gsh_front.png" width="445" height="194" alt="Good Samaritan Hospital" />
+  <div data-role="footer" data-theme="b">
+    <h4>
+      <marquee scrollamount="">
+      Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence
+      </marquee>
+    </h4>
   </div>
 </div>
-
 <div data-role="page" id="page2">
-	<div data-role="header" data-theme="b">
-		<h1>ISD Staff</h1>
-		<a href="#page" data-role="button" data-icon="home" data-iconpos="left">HOME</a>
-	</div>
-	<div data-role="content" data-theme="d">
-	  <table border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
-	    <tr>
-	      <th bgcolor="#CCCCCC">Name</th>
-	      <th bgcolor="#CCCCCC">Pager</th>
-	      <th bgcolor="#CCCCCC">Work</th>
-	      <th bgcolor="#CCCCCC">Home /<br>
+  <div data-role="header" data-theme="b">
+    <h1>ISD Staff</h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="left" onClick="goBack()">Back</a> </div>
+  <div data-role="content" data-theme="d">
+    <table border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
+      <tr>
+        <th bgcolor="#CCCCCC">Name</th>
+        <th bgcolor="#CCCCCC">Pager</th>
+        <th bgcolor="#CCCCCC">Work</th>
+        <th bgcolor="#CCCCCC">Home /<br>
           Cell</th>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Ancella</td>
-	      <td align="right" style="text-align: left">133</td>
-	      <td><a href="tel:812-885-3072" data-iconpos="right" data-role="button" data-theme="b">3072</a></td>
-	      <td><a href="tel:812-881-9640" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Beth</td>
-	      <td align="right" style="text-align: left">732</td>
-	      <td><a href="tel:812-885-3591" data-iconpos="right" data-role="button" data-theme="b">3591</a></td>
-	      <td><a href="tel:812-882-7134" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Betty</td>
-	      <td align="right" style="text-align: left">131</td>
-	      <td><a href="tel:812-885-3528" data-iconpos="right" data-role="button" data-theme="b">3528</a></td>
-	      <td><a href="tel:618-943-5691" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Brad</td>
-	      <td align="right" style="text-align: left">139</td>
-	      <td><a href="tel:812-885-3264" data-iconpos="right" data-role="button" data-theme="b">3264</a></td>
-	      <td><a href="tel:812-890-1972" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Brady</td>
-	      <td align="right" style="text-align: left">736</td>
-	      <td><a href="tel:812-885-3588" data-iconpos="right" data-role="button" data-theme="b">3588</a></td>
-	      <td><a href="tel:812-726-4512" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-726-4512" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Dale</td>
-	      <td align="right" style="text-align: left">137</td>
-	      <td><a href="tel:812-885-3852" data-iconpos="right" data-role="button" data-theme="b">3852</a></td>
-	      <td><a href="tel:812-890-7468" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Denise </td>
-	      <td align="right" style="text-align: left">735</td>
-	      <td><a href="tel:812-885-3634" data-iconpos="right" data-role="button" data-theme="b">3634</a></td>
-	      <td><a href="tel:618-544-3145" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:618-562-3145" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Dominic</td>
-	      <td align="right" style="text-align: left">123</td>
-	      <td><a href="tel:812-885-3356" data-iconpos="right" data-role="button" data-theme="b">3356</a></td>
-	      <td><a href="tel:812-830-9981" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Don</td>
-	      <td align="right" style="text-align: left">125</td>
-	      <td><a href="tel:812-885-3679" data-iconpos="right" data-role="button" data-theme="b">3679</a></td>
-	      <td><a href="tel:812-385-2051" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-664-1127" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Doug</td>
-	      <td align="right" style="text-align: left">729</td>
-	      <td><a href="tel:812-885-3068" data-iconpos="right" data-role="button" data-theme="b">3068</a></td>
-	      <td><a href="tel:812-890-7617" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Elisa</td>
-	      <td align="right" style="text-align: left">138</td>
-	      <td><a href="tel:812-885-3819" data-iconpos="right" data-role="button" data-theme="b">3819</a></td>
-	      <td><a href="tel:812-886-3934" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Eric</td>
-	      <td align="right" style="text-align: left">728</td>
-	      <td><a href="tel:812-885-3882" data-iconpos="right" data-role="button" data-theme="b">3882</a></td>
-	      <td><a href="tel:812-895-0747" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Help Desk </td>
-	      <td style="text-align: left"></td>
-	      <td><a href="tel:812-885-3500" data-iconpos="right" data-role="button" data-theme="b">3500</a></td>
-	      <td>&nbsp;</td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Jackie</td>
-	      <td align="right" style="text-align: left">731</td>
-	      <td><a href="tel:812-885-3508" data-iconpos="right" data-role="button" data-theme="b">3508</a></td>
-	      <td><a href="tel:812-746-8122" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Janet</td>
-	      <td align="right" style="text-align: left">135</td>
-	      <td><a href="tel:812-885-3256" data-iconpos="right" data-role="button" data-theme="b">3256</a></td>
-	      <td><a href="tel:812-886-9795" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Kevin</td>
-	      <td align="right" style="text-align: left">733</td>
-	      <td><a href="tel:812-885-3074" data-iconpos="right" data-role="button" data-theme="b">3074</a></td>
-	      <td><a href="tel:812-881-8771" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Kyle</td>
-	      <td align="right" style="text-align: left">126</td>
-	      <td><a href="tel:812-885-3872" data-iconpos="right" data-role="button" data-theme="b">3872</a></td>
-	      <td><a href="tel:618-928-2520" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-890-2850" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Laura</td>
-	      <td align="right" style="text-align: left">725</td>
-	      <td><a href="tel:812-885-3586" data-iconpos="right" data-role="button" data-theme="b">3586</a></td>
-	      <td><a href="tel:812-324-2176" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-887-8079" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Linda</td>
-	      <td align="right" style="text-align: left">129</td>
-	      <td><a href="tel:812-885-3857" data-iconpos="right" data-role="button" data-theme="b">3857</a></td>
-	      <td><a href="tel:812-254-7972" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-698-8434" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Maria </td>
-	      <td align="right" style="text-align: left">740</td>
-	      <td><a href="tel:812-885-3249" data-iconpos="right" data-role="button" data-theme="b">3249</a></td>
-	      <td><a href="tel:812-886-1146" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Marsha</td>
-	      <td align="right" style="text-align: left">132</td>
-	      <td><a href="tel:812-885-3855" data-iconpos="right" data-role="button" data-theme="b">3855</a></td>
-	      <td><a href="tel:618-943-2301" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:618-928-4443" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Natasha</td>
-	      <td style="text-align: left"></td>
-	      <td><a href="tel:812-885-3255" data-iconpos="right" data-role="button" data-theme="b">3255</a></td>
-	      <td><a href="tel:812-890-6180" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Nick</td>
-	      <td align="right" style="text-align: left">737</td>
-	      <td><a href="tel:812-885-3593" data-iconpos="right" data-role="button" data-theme="b">3593</a></td>
-	      <td><a href="tel:812-887-9777" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Pat</td>
-	      <td align="right" style="text-align: left">128</td>
-	      <td><a href="tel:812-885-3073" data-iconpos="right" data-role="button" data-theme="b">3073</a></td>
-	      <td><a href="tel:812-882-8528" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Randi</td>
-	      <td align="right" style="text-align: left">124</td>
-	      <td><a href="tel:812-885-3818" data-iconpos="right" data-role="button" data-theme="b">3818</a></td>
-	      <td><a href="tel:812-882-4349" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Roger</td>
-	      <td align="right" style="text-align: left">215</td>
-	      <td><a href="tel:812-885-3037" data-iconpos="right" data-role="button" data-theme="b">3037</a></td>
-	      <td><a href="tel:812-887-2121" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Shelly</td>
-	      <td align="right" style="text-align: left">730</td>
-	      <td><a href="tel:812-885-3529" data-iconpos="right" data-role="button" data-theme="b">3529</a></td>
-	      <td><a href="tel:812-890-2973" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Steven</td>
-	      <td align="right" style="text-align: left">136</td>
-	      <td><a href="tel:812-885-3592" data-iconpos="right" data-role="button" data-theme="b">3592</a></td>
-	      <td><a href="tel:812-881-8665" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Tauni</td>
-	      <td align="right" style="text-align: left">130</td>
-	      <td><a href="tel:812-885-3510" data-iconpos="right" data-role="button" data-theme="b">3510</a></td>
-	      <td><a href="tel:812-830-8284" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Tristan</td>
-	      <td align="right" style="text-align: left">134</td>
-	      <td><a href="tel:812-885-3069" data-iconpos="right" data-role="button" data-theme="b">3069</a></td>
-	      <td><a href="tel:812-661-6722" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Vicki</td>
-	      <td align="right" style="text-align: left">727</td>
-	      <td><a href="tel:812-885-3590" data-iconpos="right" data-role="button" data-theme="b">3590</a></td>
-	      <td><a href="tel:812-385-3506" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td align="right" style="text-align: left">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      <td>&nbsp;</td>
-        </tr>
-	    <tr>
-	      <td colspan="2" class="colorLetter">ISD Classroom</td>
-	      <td><a href="tel:812-885-5058" data-iconpos="right" data-role="button" data-theme="b">5058</a></td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td colspan="2" class="colorLetter">ISD Fax</td>
-	      <td colspan="2" align="center">812-885-3918</td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td align="right" style="text-align: left">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">AME    Group</td>
-	      <td align="right" style="text-align: left">726</td>
-	      <td><a href="tel:812-885-3501" data-iconpos="right" data-role="button" data-theme="b">3501</a></td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">IKON </td>
-	      <td align="right" style="text-align: left">699</td>
-	      <td><a href="tel:812-885-8335" data-iconpos="right" data-role="button" data-theme="b">8335</a></td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td align="right" style="text-align: left">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td align="right" style="text-align: left">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      <td></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td align="right" style="text-align: left">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      <td></td>
-        </tr>
-      </table>
+      </tr>
+      <tr>
+        <td class="colorLetter">Ancella</td>
+        <td align="right" style="text-align: left">133</td>
+        <td><a href="tel:812-885-3072" data-iconpos="right" data-role="button" data-theme="b">3072</a></td>
+        <td><a href="tel:812-881-9640" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Beth</td>
+        <td align="right" style="text-align: left">732</td>
+        <td><a href="tel:812-885-3591" data-iconpos="right" data-role="button" data-theme="b">3591</a></td>
+        <td><a href="tel:812-882-7134" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Betty</td>
+        <td align="right" style="text-align: left">131</td>
+        <td><a href="tel:812-885-3528" data-iconpos="right" data-role="button" data-theme="b">3528</a></td>
+        <td><a href="tel:618-943-5691" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Brad</td>
+        <td align="right" style="text-align: left">139</td>
+        <td><a href="tel:812-885-3264" data-iconpos="right" data-role="button" data-theme="b">3264</a></td>
+        <td><a href="tel:812-890-1972" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Brady</td>
+        <td align="right" style="text-align: left">736</td>
+        <td><a href="tel:812-885-3588" data-iconpos="right" data-role="button" data-theme="b">3588</a></td>
+        <td><a href="tel:812-726-4512" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-726-4512" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Dale</td>
+        <td align="right" style="text-align: left">137</td>
+        <td><a href="tel:812-885-3852" data-iconpos="right" data-role="button" data-theme="b">3852</a></td>
+        <td><a href="tel:812-890-7468" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Denise </td>
+        <td align="right" style="text-align: left">735</td>
+        <td><a href="tel:812-885-3634" data-iconpos="right" data-role="button" data-theme="b">3634</a></td>
+        <td><a href="tel:618-544-3145" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:618-562-3145" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Dominic</td>
+        <td align="right" style="text-align: left">123</td>
+        <td><a href="tel:812-885-3356" data-iconpos="right" data-role="button" data-theme="b">3356</a></td>
+        <td><a href="tel:812-830-9981" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Don</td>
+        <td align="right" style="text-align: left">125</td>
+        <td><a href="tel:812-885-3679" data-iconpos="right" data-role="button" data-theme="b">3679</a></td>
+        <td><a href="tel:812-385-2051" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-664-1127" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Doug</td>
+        <td align="right" style="text-align: left">729</td>
+        <td><a href="tel:812-885-3068" data-iconpos="right" data-role="button" data-theme="b">3068</a></td>
+        <td><a href="tel:812-890-7617" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Elisa</td>
+        <td align="right" style="text-align: left">138</td>
+        <td><a href="tel:812-885-3819" data-iconpos="right" data-role="button" data-theme="b">3819</a></td>
+        <td><a href="tel:812-886-3934" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Eric</td>
+        <td align="right" style="text-align: left">728</td>
+        <td><a href="tel:812-885-3882" data-iconpos="right" data-role="button" data-theme="b">3882</a></td>
+        <td><a href="tel:812-895-0747" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Help Desk </td>
+        <td style="text-align: left"></td>
+        <td><a href="tel:812-885-3500" data-iconpos="right" data-role="button" data-theme="b">3500</a></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Jackie</td>
+        <td align="right" style="text-align: left">731</td>
+        <td><a href="tel:812-885-3508" data-iconpos="right" data-role="button" data-theme="b">3508</a></td>
+        <td><a href="tel:812-746-8122" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Janet</td>
+        <td align="right" style="text-align: left">135</td>
+        <td><a href="tel:812-885-3256" data-iconpos="right" data-role="button" data-theme="b">3256</a></td>
+        <td><a href="tel:812-886-9795" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Kevin</td>
+        <td align="right" style="text-align: left">733</td>
+        <td><a href="tel:812-885-3074" data-iconpos="right" data-role="button" data-theme="b">3074</a></td>
+        <td><a href="tel:812-881-8771" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Kyle</td>
+        <td align="right" style="text-align: left">126</td>
+        <td><a href="tel:812-885-3872" data-iconpos="right" data-role="button" data-theme="b">3872</a></td>
+        <td><a href="tel:618-928-2520" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-890-2850" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Laura</td>
+        <td align="right" style="text-align: left">725</td>
+        <td><a href="tel:812-885-3586" data-iconpos="right" data-role="button" data-theme="b">3586</a></td>
+        <td><a href="tel:812-324-2176" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-887-8079" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Linda</td>
+        <td align="right" style="text-align: left">129</td>
+        <td><a href="tel:812-885-3857" data-iconpos="right" data-role="button" data-theme="b">3857</a></td>
+        <td><a href="tel:812-254-7972" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:812-698-8434" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Maria </td>
+        <td align="right" style="text-align: left">740</td>
+        <td><a href="tel:812-885-3249" data-iconpos="right" data-role="button" data-theme="b">3249</a></td>
+        <td><a href="tel:812-886-1146" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Marsha</td>
+        <td align="right" style="text-align: left">132</td>
+        <td><a href="tel:812-885-3855" data-iconpos="right" data-role="button" data-theme="b">3855</a></td>
+        <td><a href="tel:618-943-2301" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a><a href="tel:618-928-4443" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Natasha</td>
+        <td style="text-align: left"></td>
+        <td><a href="tel:812-885-3255" data-iconpos="right" data-role="button" data-theme="b">3255</a></td>
+        <td><a href="tel:812-890-6180" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Nick</td>
+        <td align="right" style="text-align: left">737</td>
+        <td><a href="tel:812-885-3593" data-iconpos="right" data-role="button" data-theme="b">3593</a></td>
+        <td><a href="tel:812-887-9777" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Pat</td>
+        <td align="right" style="text-align: left">128</td>
+        <td><a href="tel:812-885-3073" data-iconpos="right" data-role="button" data-theme="b">3073</a></td>
+        <td><a href="tel:812-882-8528" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Randi</td>
+        <td align="right" style="text-align: left">124</td>
+        <td><a href="tel:812-885-3818" data-iconpos="right" data-role="button" data-theme="b">3818</a></td>
+        <td><a href="tel:812-882-4349" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Roger</td>
+        <td align="right" style="text-align: left">215</td>
+        <td><a href="tel:812-885-3037" data-iconpos="right" data-role="button" data-theme="b">3037</a></td>
+        <td><a href="tel:812-887-2121" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Shelly</td>
+        <td align="right" style="text-align: left">730</td>
+        <td><a href="tel:812-885-3529" data-iconpos="right" data-role="button" data-theme="b">3529</a></td>
+        <td><a href="tel:812-890-2973" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Steven</td>
+        <td align="right" style="text-align: left">136</td>
+        <td><a href="tel:812-885-3592" data-iconpos="right" data-role="button" data-theme="b">3592</a></td>
+        <td><a href="tel:812-881-8665" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Tauni</td>
+        <td align="right" style="text-align: left">130</td>
+        <td><a href="tel:812-885-3510" data-iconpos="right" data-role="button" data-theme="b">3510</a></td>
+        <td><a href="tel:812-830-8284" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Tristan</td>
+        <td align="right" style="text-align: left">134</td>
+        <td><a href="tel:812-885-3069" data-iconpos="right" data-role="button" data-theme="b">3069</a></td>
+        <td><a href="tel:812-661-6722" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Vicki</td>
+        <td align="right" style="text-align: left">727</td>
+        <td><a href="tel:812-885-3590" data-iconpos="right" data-role="button" data-theme="b">3590</a></td>
+        <td><a href="tel:812-385-3506" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/phone-call-active-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td align="right" style="text-align: left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="colorLetter">ISD Classroom</td>
+        <td><a href="tel:812-885-5058" data-iconpos="right" data-role="button" data-theme="b">5058</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="colorLetter">ISD Fax</td>
+        <td colspan="2" align="center">812-885-3918</td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td align="right" style="text-align: left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">AME    Group</td>
+        <td align="right" style="text-align: left">726</td>
+        <td><a href="tel:812-885-3501" data-iconpos="right" data-role="button" data-theme="b">3501</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">IKON </td>
+        <td align="right" style="text-align: left">699</td>
+        <td><a href="tel:812-885-8335" data-iconpos="right" data-role="button" data-theme="b">8335</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td align="right" style="text-align: left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td align="right" style="text-align: left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td align="right" style="text-align: left">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td></td>
+      </tr>
+    </table>
   </div>
-	<div data-role="footer" data-theme="b">
-		<h4><marquee scrollamount="">Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence</marquee></h4>
-	</div>
+  <div data-role="footer" data-theme="b">
+    <h4>
+      <marquee scrollamount="">
+      Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence
+      </marquee>
+    </h4>
+  </div>
 </div>
-
 <div data-role="page" id="page3">
-	<div data-role="header" data-theme="b">
-		<h1>On Call / Other</h1>
-		<a href="#page" data-role="button" data-icon="home" data-iconpos="left">HOME</a>
-	</div>
-	<div data-role="content" data-theme="d">
+  <div data-role="header" data-theme="b">
+    <h1>On Call / Other</h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="left" onClick="goBack()">Back</a> </div>
+  <div data-role="content" data-theme="d">
     <table width="226" border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
-	    <tr>
-	      <th bgcolor="#CCCCCC">Name</th>
-	      <th bgcolor="#CCCCCC">BlackBerry</th>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">1st On Call</td>
-	      <td><a href="tel:812-899-1727" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">2nd On Call</td>
-	      <td><a href="tel:812-899-1724" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter"> Clinical On Call</td>
-	      <td><a href="tel:812-887-4096" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">PACS On Call</td>
-	      <td><a href="tel:812-887-7533" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      <tr>
+        <th bgcolor="#CCCCCC">Name</th>
+        <th bgcolor="#CCCCCC">BlackBerry</th>
       </tr>
-	    <tr>
-	      <td class="colorLetter">Interface Manager</td>
-	      <td><a href="tel:812-887-2828" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      <tr>
+        <td class="colorLetter">1st On Call</td>
+        <td><a href="tel:812-899-1727" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
       </tr>
-      </table>
-    </div>
-    <div data-role="content" data-theme="d">
-    <table width="226" border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
-	    <tr>
-	      <th bgcolor="#CCCCCC">Name</th>
-	      <th bgcolor="#CCCCCC">Number</th>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Care Manager<br>
-          Long Range Pager</td>
-	      <td><a href="tel:812-885-2912" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Tech Services<br>
-          Long Range Pager</td>
-	      <td><a href="tel:812-885-8102" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter"> Indiana / Illinois<br>
-          Long Range Pager</td>
-	      <td><a href="tel:812-885-2939" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-      </table>
+      <tr>
+        <td class="colorLetter">2nd On Call</td>
+        <td><a href="tel:812-899-1724" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter"> Clinical On Call</td>
+        <td><a href="tel:812-887-4096" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">PACS On Call</td>
+        <td><a href="tel:812-887-7533" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Interface Manager</td>
+        <td><a href="tel:812-887-2828" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+    </table>
   </div>
-	<div data-role="footer" data-theme="b">
-		<h4><marquee scrollamount="">Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence</marquee></h4>
-	</div>
+  <div data-role="content" data-theme="d">
+    <table width="226" border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
+      <tr>
+        <th bgcolor="#CCCCCC">Name</th>
+        <th bgcolor="#CCCCCC">Number</th>
+      </tr>
+      <tr>
+        <td class="colorLetter">Care Manager<br>
+          Long Range Pager</td>
+        <td><a href="tel:812-885-2912" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Tech Services<br>
+          Long Range Pager</td>
+        <td><a href="tel:812-885-8102" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter"> Indiana / Illinois<br>
+          Long Range Pager</td>
+        <td><a href="tel:812-885-2939" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+    </table>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>
+      <marquee scrollamount="">
+      Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence
+      </marquee>
+    </h4>
+  </div>
 </div>
-
 <div data-role="page" id="page4">
-	<div data-role="header" data-theme="b">
-		<h1>Vendors</h1>
-       <a href="#page" data-role="button" data-icon="home" data-iconpos="left">HOME</a>
-	</div>
-	<div data-role="content" data-theme="d">	
-		<table width="226" border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
-	    <tr>
-	      <th bgcolor="#CCCCCC">Name</th>
-	      <th bgcolor="#CCCCCC">Number</th>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">QuadraMed Support</td>
-	      <td><a href="tel:877-823-7263" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">HP Response Center</td>
-	      <td><a href="tel:800-633-3600" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter"> Roger Titzer (HP Field Service Engineer)</td>
-	      <td><a href="tel:404-774-5099" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-        </tr>
-	    <tr>
-	      <td class="colorLetter">Rudy Belcher (HP Customer Engineer)</td>
-	      <td><a href="tel:877-369-6344" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-	      </tr>
-	    <tr>
-	      <td class="colorLetter">EMC Tech Support<br>
-	        Steve Cook<br>
+  <div data-role="header" data-theme="b">
+    <h1>Vendors</h1>
+    <a href="#" data-role="button" data-icon="back" data-iconpos="left" onClick="goBack()">Back</a> </div>
+  <div data-role="content" data-theme="d">
+    <table width="226" border="1" bordercolor="#666666" style="font-size: 14px; font-weight: bold; color: #000;">
+      <tr>
+        <th bgcolor="#CCCCCC">Name</th>
+        <th bgcolor="#CCCCCC">Number</th>
+      </tr>
+      <tr>
+        <td class="colorLetter">QuadraMed Support</td>
+        <td><a href="tel:877-823-7263" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">HP Response Center</td>
+        <td><a href="tel:800-633-3600" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter"> Roger Titzer (HP Field Service Engineer)</td>
+        <td><a href="tel:404-774-5099" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">Rudy Belcher (HP Customer Engineer)</td>
+        <td><a href="tel:877-369-6344" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">EMC Tech Support<br>
+          Steve Cook<br>
           (home office)</td>
-	      <td><a href="tel:812-455-4477" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a><a href="tel:812-858-9082" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
-	      </tr>
-	    <tr>
-	      <td class="colorLetter">McKesson Customer Code</td>
-	      <td align="center">2226</td>
-	      </tr>
-	    <tr>
-	      <td class="colorLetter">McKesson Healthcare<br>
-	        Help Desk<br>
+        <td><a href="tel:812-455-4477" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a><a href="tel:812-858-9082" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="16" height="16" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">McKesson Customer Code</td>
+        <td align="center">2226</td>
+      </tr>
+      <tr>
+        <td class="colorLetter">McKesson Healthcare<br>
+          Help Desk<br>
           (Med Cabinets)</td>
-	      <td><a href="tel:800-700-8737" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
-	      </tr>
-	    <tr>
-	      <td class="colorLetter">&nbsp;</td>
-	      <td>&nbsp;</td>
-	      </tr>
-	    <tr>
-	      <td class="colorLetter">???????????</td>
-	      <td>&nbsp;</td>
-	      </tr>
-      </table>		
-	</div>
-	<div data-role="footer" data-theme="b">
-		<h4><marquee scrollamount="">Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence</marquee></h4>
-	</div>
+        <td><a href="tel:800-700-8737" data-iconpos="right" data-role="button" data-theme="b"><img src="icons/11-16.png" width="18" height="18" alt="" /></a></td>
+      </tr>
+      <tr>
+        <td class="colorLetter">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="colorLetter">???????????</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+  <div data-role="footer" data-theme="b">
+    <h4>
+      <marquee scrollamount="">
+      Patient &#8226; Respect &#8226; Integrity &#8226; Dignity &#8226; Excellence
+      </marquee>
+    </h4>
+  </div>
 </div>
-
 </body>
 </html>
