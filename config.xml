@@ -14,6 +14,8 @@ Good Samaritan Hospital ISD Phone List
 Brady Deckard
 </author>
 
-<access origin="http://www.gshvin.org" browserOnly="true"/> 
+<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+
+
 
 </widget>
