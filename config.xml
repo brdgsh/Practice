@@ -10,8 +10,10 @@
 Good Samaritan Hospital ISD Phone List
 </description>
 
-<author href="https://gshvin.org" email="bdeckard@gshvin.org">
+<author href="http://www.gshvin.org" email="bdeckard@gshvin.org">
 Brady Deckard
 </author>
+
+<access origin="http://www.gshvin.org" browserOnly="true"/> 
 
 </widget>
