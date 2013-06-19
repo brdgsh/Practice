@@ -45,6 +45,10 @@ function goBack()
 </script>
 <script type="text/javascript">
 <!--
+function loadURL(url){ 
+//alert(url); 
+navigator.app.loadUrl(url, { openExternal:true }); 
+} 
 //-->
 </script>
 </head>
@@ -60,7 +64,7 @@ function goBack()
       <li><a href="#page4">Vendors</a></li>
     </ul>
   </div>
-  <a href="#" onClick="navigator.app.loadUrl('http://www.gshvin.org', { openExternal:true } );"><img  style="position: relative; height: auto; width: 100%;" src="icons/gsh_front.png" width="445" height="194" alt="Good Samaritan Hospital" /></a>
+<img src="icons/gsh_front.png" alt="Good Samaritan Hospital" width="445" height="194"  style="position: relative; height: auto; width: 100%;" onClick="loadURL('http://www.gshvin.org')" />
   <div data-role="footer" data-theme="b">
     <h4>
       <marquee scrollamount="">

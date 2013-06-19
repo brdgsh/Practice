@@ -15,7 +15,7 @@ Brady Deckard
 </author>
 
 <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-
+<access origin="*" onlyInBrowser="true" />
 
 
 </widget>
