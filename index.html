@@ -43,12 +43,16 @@ function goBack()
 //-->
 </script>
 <script type="text/javascript">
-<!--
-$(document).on('tap', 'a[target="_blank"]', function(e){
-    navigator.app.loadUrl(e.target.href, { openExternal: true });
-    return false;
+<!--Link Fix
+$('.link').live('tap', function() {
+    url = $(this).attr("rel");   
+    loadURL(url);
 });
-//-->
+
+function loadURL(url){
+    navigator.app.loadUrl(url, { openExternal:true });
+    return false;
+} //-->
 </script>
 </head>
 <body>
@@ -63,7 +67,7 @@ $(document).on('tap', 'a[target="_blank"]', function(e){
       <li><a href="#page4">Vendors</a></li>
     </ul>
   </div>
-  <a href="http://www.gshvin.org/" target="_blank"><img  style="position: relative; height: auto; width: 100%;" src="icons/gsh_front.png" width="445" height="194" alt="Good Samaritan Hospital" /></a>
+  <a href="http://www.gshvin.org/" target="_blank" style="" class="link"><img  style="position: relative; height: auto; width: 100%;" src="icons/gsh_front.png" width="445" height="194" alt="Good Samaritan Hospital" /></a>
   <div data-role="footer" data-theme="b">
     <h4>
       <marquee scrollamount="">
